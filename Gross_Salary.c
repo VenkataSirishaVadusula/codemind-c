@@ -1,8 +1,13 @@
 #include<stdio.h>
+int gross(int BS,int DA,int HRA);
 int main()
 {
     int BS,DA,HRA;
     scanf("%d",&BS);
+    int x=gross(BS,DA,HRA);
+}
+int gross(int BS,int DA,int HRA)
+{
     float GS;
     if(BS<=10000)
     {
@@ -17,4 +22,5 @@ int main()
         GS=BS+(0.95*BS)+(0.30*BS);
     }
     printf("%0.2f",GS);
+    return 0;
 }
