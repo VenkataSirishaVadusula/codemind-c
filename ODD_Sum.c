@@ -1,12 +1,12 @@
 #include<stdio.h>
-void odd(int n,int sum);
+int odd(int n,int sum);
 int main()
 {
     int n,sum=0;
     scanf("%d",&n);
-    odd(n,sum);
+    int x=odd(n,sum);
 }
-void odd(int n,int sum)
+int odd(int n,int sum)
 {
     int a[n],i;
     for(i=0;i<n;i++)
@@ -21,4 +21,5 @@ void odd(int n,int sum)
         }
     }
     printf("%d",sum);
+    return 0;
 }
