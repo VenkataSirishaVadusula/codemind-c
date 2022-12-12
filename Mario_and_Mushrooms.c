@@ -1,12 +1,12 @@
 #include<stdio.h>
-int mario(int X);
+void mario(int X);
 int main()
 {
     int X;
     scanf("%d",&X);
-    int x=mario(X);
+    mario(X);
 }
-int mario(int X)
+void mario(int X)
 {
     if(X%3==1)
     printf("HUGE");
@@ -14,5 +14,4 @@ int mario(int X)
     printf("NORMAL");
     else
     printf("SMALL");
-    return 0;
 }
