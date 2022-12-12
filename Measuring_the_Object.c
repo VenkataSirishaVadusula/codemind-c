@@ -1,12 +1,12 @@
 #include<stdio.h>
-int obj(int W,int X,int Y,int Z);
+void obj(int W,int X,int Y,int Z);
 int main()
 {
     int W,X,Y,Z;
     scanf("%d%d%d%d",&W,&X,&Y,&Z);
-    int x=obj(W,X,Y,Z);
+    obj(W,X,Y,Z);
 }
-int obj(int W,int X,int Y,int Z)
+void obj(int W,int X,int Y,int Z)
 {
     if(Z+X+Y==W)
     printf("YES");
@@ -16,5 +16,4 @@ int obj(int W,int X,int Y,int Z)
     printf("YES");
     else
     printf("NO");
-    return 0;
 }
