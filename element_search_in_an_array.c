@@ -1,12 +1,12 @@
 #include<stdio.h>
-int ele(int n,int k);
+void ele(int n,int k);
 int main()
 {
     int n,k=0;
     scanf("%d",&n);
-    int s=ele(n,k);
+    ele(n,k);
 }
-int ele(int n,int k)
+void ele(int n,int k)
 {
     int x[n];
     for(int i=0;i<n;i++)
@@ -28,5 +28,4 @@ int ele(int n,int k)
     {
         printf("False");
     }
-    return 0;
 }
