@@ -1,12 +1,12 @@
 #include<stdio.h>
-int array(int n,int i,int s,int k,int avg);
+void array(int n,int i,int s,int k,int avg);
 int main()
 {
     int n,i,s=0,k=0,avg;
     scanf("%d",&n);
-    int ele=array( n,i,s,k,avg);
+    array(n,i,s,k,avg);
 }
-int array(int n,int i,int s,int k,int avg)
+void array(int n,int i,int s,int k,int avg)
 {
     int x[n];
     for(i=0;i<n;i++)
@@ -31,5 +31,4 @@ int array(int n,int i,int s,int k,int avg)
     {
         printf("False");
     }
-    return 0;
 }
