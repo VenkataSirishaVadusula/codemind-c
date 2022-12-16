@@ -1,12 +1,12 @@
 #include<stdio.h>
-int array(int n,int i,int s);
+void array(int n,int i,int s);
 int main()
 {
     int n,i,s=0;
     scanf("%d",&n);
-    int ga=array(n,i,s);
+    array(n,i,s);
 }
-int array(int n,int i,int s)
+void array(int n,int i,int s)
 {
     int x[n];
     float avg;
