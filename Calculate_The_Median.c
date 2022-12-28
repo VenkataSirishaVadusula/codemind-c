@@ -1,12 +1,12 @@
 #include<stdio.h>
-int medium(int n,int i,int j);
+void medium(int n,int i,int j);
 int main()
 {
 	int n,i,j;
 	scanf("%d",&n);
-	int x=medium(n,i,j);
+	medium(n,i,j);
 }
-int medium(int n,int i,int j)
+void medium(int n,int i,int j)
 {
 	int x[n];
 	int k;
@@ -28,5 +28,4 @@ int medium(int n,int i,int j)
 		}
 	}
 	printf("%d",x[n/2]);
-	return 0;
 }
