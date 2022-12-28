@@ -1,23 +1,18 @@
 #include<stdio.h>
-void current(int units,int uc);
 int main()
 {
     int units,uc=0;
     scanf("%d",&units);
-    current(units,uc);
-}
-void current(int units,int uc)
-{
     float bill,sr,tb;
-    if(units<200)
+    if (units<200)
     {
         bill=units*1.20;
     }
-    else if(units>=200 && units<400)
+    else if (units>=200 && units<400)
     {
         bill=units*1.50;
     }
-    else if(units>=400 && units<600)
+    else if (units>=400 && units<600)
     {
         bill=units*1.80;
     }
@@ -25,15 +20,15 @@ void current(int units,int uc)
     {
         bill=units*2.00;
     }
-   if(units>=400)
-   {
-       sr=bill*0.15;
-       tb=bill+sr;
-       printf("%0.2f",tb);
-   }
-   else
-   {
-       tb=bill+100;
-       printf("%0.2f",tb);
-   }
+    if (bill>=400)
+    {
+        sr=bill*0.15;
+        tb=bill+sr;
+        printf("%0.2f",tb);
+    }
+    else
+    {
+        tb=bill+100;
+        printf("%0.2f",tb);
+    }
 }
