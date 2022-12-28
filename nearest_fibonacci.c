@@ -1,12 +1,12 @@
 #include<stdio.h>
-int fibo(int a,int b,int c,int n);
+void fibo(int a,int b,int c,int n);
 int main()
 {
     int a=0,b=1,c=0,n;
     scanf("%d",&n);
-    int x=fibo(a,b,c,n);
+    fibo(a,b,c,n);
 }
-int fibo(int a,int b,int c,int n)
+void fibo(int a,int b,int c,int n)
 {
     while(n>c)
     {
@@ -26,5 +26,4 @@ int fibo(int a,int b,int c,int n)
     {
         printf("%d ",b);
     }
-    return 0;
 }
