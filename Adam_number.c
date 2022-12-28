@@ -1,12 +1,12 @@
 #include<stdio.h>
-int adam(int n);
+void adam(int n);
 int main()
 {
     int n;
     scanf("%d",&n);
-    int x=adam(n);
+    adam(n);
 }
-int adam(int n)
+void adam(int n)
 {
     int sq=n*n;
     int rev=0;
