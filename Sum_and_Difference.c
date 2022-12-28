@@ -1,8 +1,13 @@
 #include<stdio.h>
+int sudi(int a1,int b1,int s1,int d1);
 int main()
 {
    int a1,b1,s1,d1;
    scanf("%d%d",&a1,&b1);
+   int x=sudi(a1,b1,s1,d1);
+}
+int sudi(int a1,int b1,int s1,int d1)
+{
    float a2,b2,s2,d2;
    scanf("%f%f",&a2,&b2);
    s1=a1+b1;
