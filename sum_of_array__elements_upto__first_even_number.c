@@ -4,7 +4,7 @@ int main()
 {
     int n,sum=0;
     scanf("%d",&n);
-    int x=even(n,sum);
+    even(n,sum);
 }
 int even(int n,int sum)
 {
@@ -22,5 +22,4 @@ int even(int n,int sum)
         sum=sum+a[i];
     }
     printf("%d",sum);
-    return 0;
 }
