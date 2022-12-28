@@ -1,8 +1,13 @@
 #include<stdio.h>
+int diamond(int n,int i,int j);
 int main()
 {
 	int n,i,j;
 	scanf("%d",&n);
+	int x=diamond(n,i,j);
+}
+int diamond(int n,int i,int j)
+{
 	if(n<3)
 	{
 		printf("The pattern is not possible");
@@ -28,4 +33,5 @@ int main()
 ");
 		}
 	}
+	return 0;
 }
