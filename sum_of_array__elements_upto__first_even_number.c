@@ -1,8 +1,13 @@
 #include<stdio.h>
+int even(int n,int sum);
 int main()
 {
     int n,sum=0;
     scanf("%d",&n);
+    int x=even(n,sum);
+}
+int even(int n,int sum)
+{
     int a[n],i;
     for(i=0;i<n;i++)
     {
@@ -17,4 +22,5 @@ int main()
         sum=sum+a[i];
     }
     printf("%d",sum);
+    return 0;
 }
