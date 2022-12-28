@@ -1,12 +1,12 @@
 #include<stdio.h>
-int current(int units,int uc);
+void current(int units,int uc);
 int main()
 {
     int units,uc=0;
     scanf("%d",&units);
-    int x=current(units,uc);
+    current(units,uc);
 }
-int current(int units,int uc)
+void current(int units,int uc)
 {
     float bill,sr,tb;
     if (units<200)
@@ -36,5 +36,4 @@ int current(int units,int uc)
         tb=bill+100;
         printf("%0.2f",tb);
     }
-    return 0;
 }
