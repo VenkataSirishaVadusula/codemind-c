@@ -1,13 +1,13 @@
 #include<stdio.h>
 #include<math.h>
-int mix(int a,int b,int k1,int k2,int i,int n);
+void mix(int a,int b,int k1,int k2,int i,int n);
 int main()
 {
     int a,b,k1=0,k2=0,i,n;
     scanf("%d",&n);
-    int x=mix(a,b,k1,k2,i,n);
+    mix(a,b,k1,k2,i,n);
 }
-int mix(int a,int b,int k1,int k2,int i,int n)
+void mix(int a,int b,int k1,int k2,int i,int n)
 {
     for(i=1;i<=n;i++)
     {
@@ -24,5 +24,4 @@ int mix(int a,int b,int k1,int k2,int i,int n)
             k2++;
         }
     }
-    return 0;
 }
