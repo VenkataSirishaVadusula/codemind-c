@@ -1,12 +1,12 @@
 #include<stdio.h>
-int mix(int i,int n,int k,int a,int b);
+void mix(int i,int n,int k,int a,int b);
 int main()
 {
     int i,n,k=0,a,b=0;
     scanf("%d",&n);
-    int x=mix(i,n,k,a,b);
+    mix(i,n,k,a,b);
 }
-int mix(int i,int n,int k,int a,int b)
+void mix(int i,int n,int k,int a,int b)
 {
     for(i=1;i<=n+1;i++)
     {
@@ -22,5 +22,4 @@ int mix(int i,int n,int k,int a,int b)
             k++;
         }
     }
-    return 0;
 }
