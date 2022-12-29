@@ -1,13 +1,13 @@
 #include<stdio.h>
-int hallo(int t,int x,int y);
+void hallo(int t,int x,int y);
 int main()
 {
     int t,x,y;
     scanf("%d
 ",&t);
-    int s=hallo(t,x,y);
+    hallo(t,x,y);
 }
-int hallo(int t,int x,int y)
+void hallo(int t,int x,int y)
 {
     while(t)
     {
@@ -29,5 +29,4 @@ int hallo(int t,int x,int y)
         }
         t--;
     }
-    return 0;
 }
