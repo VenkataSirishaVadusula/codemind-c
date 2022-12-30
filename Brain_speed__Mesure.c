@@ -1,12 +1,12 @@
 #include<stdio.h>
-int brain(int x,int y);
+void brain(int x,int y);
 int main()
 {
     int x,y;
     scanf("%d%d",&x,&y);
-    int s=brain(x,y);
+    brain(x,y);
 }
-int brain(int x,int y)
+void brain(int x,int y)
 {
     if(x<y)
     {
@@ -16,5 +16,4 @@ int brain(int x,int y)
     {
         printf("NO");
     }
-    return 0;
 }
