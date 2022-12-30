@@ -1,9 +1,14 @@
 #include<stdio.h>
+int serie(int i,int n,int a,int b);
 int main()
 {
-    int n,a=0,b=0;
+    int i,n,a=0,b=0;
     scanf("%d",&n);
-    for(int i=1;i<=n+1;i++)
+    int s=serie(i,n,a,b);
+}
+int serie(int i,int n,int a,int b)
+{
+    for(i=1;i<=n+1;i++)
     {
         if(i%2==0)
         {
@@ -16,4 +21,5 @@ int main()
             printf("%d ",b);
         }
     }
+    return 0;
 }
