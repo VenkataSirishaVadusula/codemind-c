@@ -1,28 +1,19 @@
 #include<stdio.h>
-#include<math.h>
-void series(int a,int b,int k1,int k2,int i,int n);
 int main()
 {
-    int a,b,k1=0,k2=0,i,n;
+    int n,a=0,b=0;
     scanf("%d",&n);
-    printf("0 ");
-    series(a,b,k1,k2,i,n);
-}
-void series(int a,int b,int k1,int k2,int i,int n)
-{
-    for(i=0;i<=n-2;i++)
+    for(int i=1;i<=n+1;i++)
     {
         if(i%2==0)
         {
-            a=pow(3,k1);
+            a=(a*3)+2;
             printf("%d ",a);
-            k1++;
         }
         else
         {
-            b=pow(2,k2);
+            b=(b*2)+1;
             printf("%d ",b);
-            k2++;
         }
     }
 }
