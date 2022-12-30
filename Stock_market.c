@@ -1,12 +1,12 @@
 #include<stdio.h>
-int stock(int t,int a,int b);
+void stock(int t,int a,int b);
 int main()
 {
     int t,a,b;
     scanf("%d",&t);
-    int x=stock(t,a,b);
+    stock(t,a,b);
 }
-int stock(int t,int a,int b)
+void stock(int t,int a,int b)
 {
     while(t)
     {
@@ -28,5 +28,4 @@ int stock(int t,int a,int b)
         }
         t--;
     }
-     return 0;
 }
