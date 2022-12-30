@@ -1,12 +1,12 @@
 #include<stdio.h>
-int rain(int t,int x);
+void rain(int t,int x);
 int main()
 {
     int t,x;
     scanf("%d",&t);
-    int s=rain(t,x);
+    rain(t,x);
 }
-int rain(int t,int x)
+void rain(int t,int x)
 {
     while(t)
     {
@@ -23,9 +23,8 @@ int rain(int t,int x)
         }
         else if(x>=7)
         {
-            printf("HEAVY
-");
+            printf("HEAVY");
         }
-        t--;
     }
+    t--;
 }
