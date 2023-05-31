@@ -1,16 +1,16 @@
-#include<stdio.h>
-int main()
-{
-    int n,i;
-    int fact,rem;
-    scanf("%d",&n);
-    int sum=0;
-    int temp=n;
-    while(n)
-    {
-        i=1,fact=1;
-        rem=n%10;
-        while(i<=rem)
+ #include<stdio.h>
+ int main()
+ {
+     int n,i;
+     scanf("%d",&n);
+     int fact,rem;
+     int sum=0;
+     int a=n;
+     while(n!=0)
+     {
+         i=1,fact=1;
+         rem=n%10;
+     while(i<=rem)
         {
             fact=fact*i;
             i++;
@@ -18,8 +18,12 @@ int main()
         sum=sum+fact;
         n=n/10;
     }
-    if(sum==temp)
-    printf("The number %d is a strong number",temp);
+    if(sum==a)
+    {
+        printf("The number %d is a strong number",a);
+    }
     else
-    printf("The number %d is not a strong number",temp);
+    {
+        printf("The number %d is not a strong number",a);
+    }
 }
