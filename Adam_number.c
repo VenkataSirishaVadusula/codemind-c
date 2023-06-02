@@ -1,13 +1,8 @@
 #include<stdio.h>
-void adam(int n);
 int main()
 {
     int n;
     scanf("%d",&n);
-    adam(n);
-}
-void adam(int n)
-{
     int sq=n*n;
     int rev=0;
     while(n>0)
